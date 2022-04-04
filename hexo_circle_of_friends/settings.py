@@ -17,8 +17,8 @@
 # 支持配置多个友链页面并指定不同主题策略，每个用{}分隔，它们会被同时爬取，数据保存在一起。***至少配置一个***
 LINK = [
     {
-        "link": "https://zfe.space/link/",  # 友链页地址1，修改为你的友链页地址
-        "theme": "butterfly"
+        "link": "https://blog.huran.xyz/link",  # 友链页地址1，修改为你的友链页地址
+        "theme": "common1"
     },
     #     {
     #     "link": "https://noionion.top/link/",  # 友链页地址2
@@ -40,17 +40,59 @@ LINK = [
 #       avatar：必填，头像地址
 #       suffix：选填，自定义订阅后缀，主要针对不规范的网站订阅后缀，见示例2
 SETTINGS_FRIENDS_LINKS = {
-    "enable": False,
+    "enable": True,
     "json_api": "",
     "list": [
         # 示例1：
-        ["贰猹の小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
-        ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/images/headimage.png"],
+        ["Kindle deepのBlog", "https://blog.knlde.top/", "https://npm.elemecdn.com/hexo-avatar/link-avatar/RoundCorner.png"],
+        ["虫不知喔", "https://blog.ssykawa.com/", "https://box.ssykawa.com/swallowfeng/avatar.png"],
+        ["Akilarの糖果屋", "https://akilar.top/", "https://akilar.top/img/siteicon/favicon.png"],
+        ["Sianx's Blog", "https://sianx.com", "https://npm.elemecdn.com/picture-sianx@1.0.0/Blog/logo.png"],
+        ["Heo", "https://blog.zhheo.com/", "https://blog.zhheo.com/img/avatar.png"],
+        ["贰猹的小窝", "https://noionion.top/", "https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg"],
+        ["XueZha", "https://www.xuezha.cc", "https://npm.elemecdn.com/onexuezha_img@1.0.27/%E7%AB%99%E7%82%B9/xuezha.webp"],
+        ["区区李某曰", "https://lypzz.com/", "https://lypzz.com/img/favicon.ico"],
+        ["CC康纳百川", "https://blog.ccknbc.cc", "https://npm.elemecdn.com/hexo-avatar/link-avatar/ccknbc.png"],
+        ["LISIR", "https://lisir.me", "https://npm.elemecdn.com/hexo-avatar/link-avatar/avatar.png"],
+        ["Albert's Blog", "https://blog.lingyf.com/", "https://blog.lingyf.com/images/icon.svg"],
+        ["可以清心", "https://www.keyiqingxin.cn/", "https://cdn.jsdelivr.net/gh/milkdue/cdn@2.9/img/avatar.jpg"],
+        ["Gahotx", "https://gahotx.cn/", "https://npm.elemecdn.com/gahotx-cdn/photo/cat.jpg"],
+        ["CieanYau", "https://blog.milank.cn", "https://img.milank.cn/image/1_1641457746569.jpg"],
+        ["Vian", "https://vian.top/", "https://npm.elemecdn.com/hexo-avatar/link-avatar/Vian.jpg"],
+        ["锦瑟的糖果屋", "https://www.ijinse.cn", "https://www.ijinse.cn/logo.png"],
+        ["小孙同学", "https://sunguoqi.com", "https://npm.elemecdn.com/hexo-avatar/link-avatar/sun.jpg"],
+        ["Vincent文朔", "https://blog.vincent1230.top/", "https://blog.vincent1230.top/wp-content/uploads/2021/10/avatar.jpg"],
+        ["心盲", "https://www.dqxz.xyz", "https://www.dqxz.xyz/wp-content/uploads/2022/01/512.jpg"],
+        ["柯学", "https://mymonth.cn/", "https://mymonth.cn/wp-content/uploads/2021/03/IMG_20201114_112535.jpg"],
+        ["陈YFの博客", "https://blog.cyfan.top/", "https://npm.elemecdn.com/hexo-avatar@1.1.6/link-avatar/blog.cyfan.top.png"],
+        ["潘高的小站", "https://blog.pangao.vip", "https://npm.elemecdn.com/hexo-avatar@1.1.6/link-avatar/pangao.jpg"],
+        ["鱼跃此时海", "https://www.overme.cn/", "https://www.overme.cn/static/img/portrait.jpg"],
+        ["ImCaO's Blog", "https://www.imcao.cn", "https://www.imcao.cn/avatar.png"],
+        ["极星网–博客论坛", "https://www.jixing.one/", "https://npm.elemecdn.com/hexo-avatar@1.1.9/link-avatar/jixing.jpg"],
+        ["日常代码", "http://www.hezi.site", "https://www.hezi.site/favicon.ico"],
+        ["瑾年的学习记录", "https://zhoudongqi.com/", "https://zhoudongqi.com/medias/logo.png"],
+        ["Smile Diary", "https://blog.fullcomb.top/", "https://cloud.fullcomb.top/private/source/image/avatar.JPG"],
+        ["Cyan の星座屋", "https://blog.xmwpro.com/", "https://cyan-blog.oss-cn-shenzhen.aliyuncs.com/global/avatar.jpeg"],
+        ["江潮博客", "http://zcnihao.cn", "https://img.huran.xyz/2022/01/27/ZAohujeE.png"],
+        ["Sady’Blog", "https://sady0.com/", "https://pic.sady0.com/2022/01/22/fe60d1a167a45.png"],
+        ["Rootlex", "https://blog.nalex.top/", "https://cdn.jsdelivr.net/gh/rootlexblog/cdn-image/logo.jpg"],
+        ["WXY", "https://undf.top", "https://c.undf.top/icon/android-chrome-144x144.png"],
+        ["小不的窝", "https://blog.donotknow.top", "https://i.loli.net/2021/02/08/4Pt2EqRAZgFK9IJ.jpg"],
+        ["花裱の博客", "https://dingzihang00.top/", "https://npm.elemecdn.com/ding-blogdemo@1.0.4/img/Favicon.png"],
+        ["初的小站", "https://www.songonline.top/", "https://gitee.com/WangSong1111/pic-go-image/raw/master/img/touxiang.jpg"],
+        ["Travele_", "https://www.travele.cc", "https://www.travele.cc/picture/1.jpg"],
+        ["十玖八柒", "https://ahzoo.cn/", "https://ahzoo.cn/img/avatar.jpg"],
+        ["葱苓的小窝", "https://www.itciraos.cn", "https://www.itciraos.cn/mysource/avatar.webp"],
+        ["Hassan's Blog", "https://hassanwong.top", "https://npm.elemecdn.com/hassan-assets/img/avatar_blog.jpg"],
+        ["小N同学", "https://www.nesxc.com", "https://public.cdn.nesxc.com/avatar.jpg"],
+        ["Slcpの童话镇", "https://slcp.top/article", "https://img.slcp.top/bg.jpg"],
+        ["bili博客", "https://www.bilibbs.com", "https://q1.qlogo.cn/g?b=qq&nk=1645253&s=640"],
+        ["二次元の博客", "https://cbbkk.com", "https://cbbkk.com/wp-content/uploads/ttx.png"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
         # 比如 https://elizen.me/hello.xml ，填写：
-        ["elizen", "https://elizen.me/", "https://akilar.top/images/headimage.png", "hello.xml"],
+        # ["elizen", "https://elizen.me/", "https://akilar.top/images/headimage.png", "hello.xml"],
     ]
 }
 
