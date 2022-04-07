@@ -90,6 +90,7 @@ SETTINGS_FRIENDS_LINKS = {
         ["二次元の博客", "https://cbbkk.com", "https://cbbkk.com/wp-content/uploads/ttx.png"],
         ["白小屋", "https://kjyyds.xyz", "https://pic.rmb.bdstatic.com/bjh/de37f46a9833c1a4c6b9b2d9bec63151.gif"],
         ["HTY - 怠惰博客", "https://hty.ink", "https://hty.ink/logo.jpg"],
+        ["Mx", "https://www.wwru.cn/", "https://static.mx142.cn/img/logo.png"],
         # 示例2：使用suffix的配置如下
         # 程序目前自动获取 "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml" 这些后缀
         # 如果目标地址的后缀不在其中，就可以在这里添加
